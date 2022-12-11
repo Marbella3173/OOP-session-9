@@ -1,0 +1,64 @@
+SIMS
+
+-----------------------------------
+
+person -> abstract
+- String name
+- int stamina
+- int intelligence
+- eat()
+- sleep()
+
+student -> extends person
+- super() from person
+- study()
+
+work() -> interface
+
+office worker -> extends person
+- super() from person
+- int money
+- work() from interface
+
+train() -> interface
+
+athlete -> extends office worker
+- super() from office worker
+- int power
+- train() from interface
+
+musician -> extends office worker
+- super() from office worker
+- int skill
+- train() from interface
+
+singer -> extends musician
+- super() from musician
+
+guitarist -> extends musician
+- super() from musician
+
+---------------------------------------
+
+input name
+stamina & intelligence default 50
+
+stamina min 20
+
+intelligence >= 100 buat naik level
+random num 1 - 4
+1 office worker
+2 athlete
+3 singer
+4 guitarist
+
+money default 100
+power & skill default 50
+
+money min 20
+
+random num 1 - 3 -> sleep()
+1 	is sleeping tok
+2 & 3 	is sleeping n rest in peace
+
+end.
